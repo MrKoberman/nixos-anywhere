@@ -26,7 +26,7 @@ module "install" {
   ssh_private_key              = each.value.install_ssh_private_key
   debug_logging                = false
   stop_after_disko             = false
-  extra_files_script           = null
+  extra_files_script           = each.value.install_extra_files_script
   disk_encryption_key_scripts  = []
   extra_environment            = {}
   instance_id                  = each.key

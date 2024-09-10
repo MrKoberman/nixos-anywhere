@@ -10,6 +10,7 @@ variable "hosts" {
     flake_system_attr = string
     flake_partitioner_attr = string
     file = string
+    install_extra_files_script = string
   }))
   description = "List of the target hosts, NixOS configurations and healthcheck scripts."
 }
